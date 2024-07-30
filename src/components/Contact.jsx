@@ -1,10 +1,12 @@
 import React from "react";
+import { CiMail } from "react-icons/ci";
+import { FiSmartphone } from "react-icons/fi";
 
 export default function Contact() {
   return (
     <section id="contact" className="md:h-screen">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap sm:h-screen">
-        <div className="md:w-2/12 w-full sm:w-80 sm:mr-5 sm:h-4/5 lg:w-2/4">
+        <div className="w-full sm:w-1/2 sm:mr-6 sm:h-4/6">
           <iframe
             width="100%"
             height="100%"
@@ -20,15 +22,17 @@ export default function Contact() {
 
         <form
           name="contact"
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          className="lg:w-1/3 md:w-1/2 sm:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+          <h2 className="text-white sm:text-4xl text-3xl mb-3 font-medium title-font">
             ¡Contrátame!
           </h2>
-          <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
-          </p>
+          <h4 className="mb-3 flex flex-row">
+            <FiSmartphone size={25} className="mr-1"/> 3364359560
+          </h4>
+          <h4 className="mb-3 flex flex-row">
+            <CiMail size={25} className="mr-1"/> agustinnatali7@gmail.com
+          </h4>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
               Nombre

@@ -1,62 +1,80 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { useState } from "react";
+import { TbCircleLetterNFilled } from "react-icons/tb";
 
 export default function Navbar() {
-  const location = useLocation();
-  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleNavigation = (hash) => {
-    if (location.pathname === "/contact") {
-      navigate(`/${hash}`);
-    } else {
-      window.location.hash = hash;
-    }
-  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className="bg-gray-800 md:sticky top-0 z-20">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col justify-between md:flex-row items-center">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <Link
+          to="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer"
+        >
+          <TbCircleLetterNFilled className="w-10 h-10 text-blue-700 dark:text-white" />
+        </Link>
         <button
-          onClick={() => handleNavigation("#about")}
-          className="ml-3 text-xl hover:text-white"
+          data-collapse-toggle="navbar-default"
+          type="button"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded={isOpen}
+          onClick={toggleMenu}
         >
-          Agustin Natali
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
         </button>
-        <button className="md:hidden ml-auto text-white" onClick={toggleMenu}>
-          &#9776;
-        </button>
-        <nav
-          className={`${
-            isOpen ? "block" : "hidden"
-          } md:flex md:items-center md:w-auto w-full`}
+        <div
+          className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
+          id="navbar-default"
         >
-          <div className="md:flex md:space-x-4">
-            <button
-              onClick={() => handleNavigation("#projects")}
-              className="block md:inline-block mr-5 hover:text-white"
-            >
-              Aplicaciones
-            </button>
-            <button
-              onClick={() => handleNavigation("#skills")}
-              className="block md:inline-block mr-5 hover:text-white"
-            >
-              Habilidades
-            </button>
-            <Link
-              to="/contact"
-              className="block md:inline-block border-0 py-1 px-3 focus:outline-none hover:text-white rounded text-base mt-4 md:mt-0"
-            >
-              Contacto
-            </Link>
-          </div>
-        </nav>
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <Link
+                to="/#projects"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"
+              >
+                Aplicaciones
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#skills"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"
+              >
+                Contacto
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 }

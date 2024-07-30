@@ -3,7 +3,7 @@ export const projects = [
     title: "Cinehub",
     subtitle: "Javascript,Html,Css",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Este fue un proyecto construido con HTML, CSS y JavaScript. Es una página web que muestra información de películas y series de televisión. Utiliza la API de The Movie Database para obtener la información de las películas y series.",
     image: "https://portfolio-an.vercel.app/images/Cinehub.png",
     link: "about:blank",
   },
@@ -11,7 +11,7 @@ export const projects = [
     title: "Memorama",
     subtitle: "Javascript,Html,Css",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Este fue un proyecto construido con HTML, CSS y JavaScript. Es un juego de memoria en el que el jugador debe encontrar las parejas de las cartas para asi obtener la victoria.Tiene discos de rock de los 90s como temática.",
     image: "https://portfolio-an.vercel.app/images/Memorama.png",
     link: "https://memorama-discos.vercel.app/",
   },
@@ -19,7 +19,7 @@ export const projects = [
     title: "GastronomeC#",
     subtitle: "Windows Forms C#, NodeJS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Este fue un proyecto construido con Windows Forms en C# y NodeJS. Es un sistema de gestión de restaurantes que permite a los empleados tomar pedidos, gestionar mesas y ver el estado de las mismas.",
     image: "/Restaurant Front.png",
     link: "about:blank",
   },
@@ -27,7 +27,7 @@ export const projects = [
     title: "Landing Medicina",
     subtitle: "Javascript,Html,Css",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Esta landing page fue construida con HTML, CSS y JavaScript. Es una página web que muestra información sobre por ejemplo una obra social prepaga de medicina. En este caso, solamente es un ejemplo",
     image: "/Landing Medicina.png",
     link: "about:blank",
   },
@@ -35,7 +35,7 @@ export const projects = [
     title: "Password Generator",
     subtitle: "React",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Este es un proyecto construido con React. Es un generador de contraseñas que permite al usuario elegir la longitud de la contraseña y si desea incluir números, letras mayúsculas, letras minúsculas y símbolos.",
     image: "/Password Generator.png",
     link: "https://passwords-an.vercel.app/",
   },
@@ -43,7 +43,7 @@ export const projects = [
     title: "Chess Clock",
     subtitle: "React",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Este es un proyecto construido con React. Es un reloj de ajedrez que permite a los jugadores configurar el tiempo de juego y el tiempo de incremento.",
     image: "/Chess Clock.png",
     link: "https://chess-clock-an.vercel.app/",
   },

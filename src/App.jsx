@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      <main className="text-gray-400 bg-gray-900 body-font">
+      <main className="text-gray-400 bg-gray-900 body-font dark:bg-white dark:text-black ">
         <Router>
           <Navbar />
           <Routes>

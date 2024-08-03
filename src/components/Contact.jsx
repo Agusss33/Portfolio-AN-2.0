@@ -1,8 +1,14 @@
 import React from "react";
 import { CiMail } from "react-icons/ci";
 import { FiSmartphone } from "react-icons/fi";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm("mldrblvg");
+  if (state.succeeded) {
+    e.preventDefault();
+    return <p>Gracias por enviar!</p>;
+  }
   return (
     <section id="contact" className="md:h-screen">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap sm:h-screen">
@@ -23,15 +29,16 @@ export default function Contact() {
         <form
           name="contact"
           className="lg:w-1/3 md:w-1/2 sm:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          onSubmit={handleSubmit}
         >
-          <h2 className="text-white sm:text-4xl text-3xl mb-3 font-medium title-font">
+          <h2 className="text-white sm:text-4xl text-3xl mb-3 font-medium title-font dark:text-black">
             ¡Contrátame!
           </h2>
           <h4 className="mb-3 flex flex-row">
-            <FiSmartphone size={25} className="mr-1"/> 3364359560
+            <FiSmartphone size={25} className="mr-1" /> 3364359560
           </h4>
           <h4 className="mb-3 flex flex-row">
-            <CiMail size={25} className="mr-1"/> agustinnatali7@gmail.com
+            <CiMail size={25} className="mr-1" /> agustinnatali7@gmail.com
           </h4>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -71,6 +78,7 @@ export default function Contact() {
           <button
             type="submit"
             className="text-white bg-slate-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-300 rounded text-lg"
+            disabled={state.submitting}
           >
             Enviar
           </button>

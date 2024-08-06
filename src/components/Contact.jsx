@@ -2,12 +2,14 @@ import React from "react";
 import { CiMail } from "react-icons/ci";
 import { FiSmartphone } from "react-icons/fi";
 import { useForm, ValidationError } from "@formspree/react";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mldrblvg");
+  const navi = useNavigate();
   if (state.succeeded) {
-    e.preventDefault();
-    return <p>Gracias por enviar!</p>;
+    alert("¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.");
+    navi("/");
   }
   return (
     <section id="contact" className="md:h-screen">

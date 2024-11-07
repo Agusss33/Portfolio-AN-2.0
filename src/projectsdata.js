@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "Cinehub",
+    title: "Anotador de Truco",
     subtitle: "Javascript,Html,Css",
     description:
-      "Este fue un proyecto construido con HTML, CSS y JavaScript. Es una página web que muestra información de películas y series de televisión. Utiliza la API de The Movie Database para obtener la información de las películas y series.",
-    image: "https://portfolio-an.vercel.app/images/Cinehub.png",
-    link: "about:blank",
+      "Este fue un proyecto construido con HTML, CSS y JavaScript. Es una página web que se utiliza para registrar los puntos de un juego de cartas llamado Truco y llevar a tiempo cuanto puntos faltan para poner ganar.",
+    image: "/Truco.png",
+    link: "https://anotador-an.vercel.app/",
   },
   {
     title: "Memorama",
@@ -21,7 +21,7 @@ export const projects = [
     description:
       "Este fue un proyecto construido con Windows Forms en C# y NodeJS. Es un sistema de gestión de restaurantes que permite a los empleados tomar pedidos, gestionar mesas y ver el estado de las mismas.",
     image: "/Restaurant Front.png",
-    link: "about:blank",
+    link: "/Restaurant Front.png",
   },
   {
     title: "Landing Medicina",
@@ -29,7 +29,7 @@ export const projects = [
     description:
       "Esta landing page fue construida con HTML, CSS y JavaScript. Es una página web que muestra información sobre por ejemplo una obra social prepaga de medicina. En este caso, solamente es un ejemplo",
     image: "/Landing Medicina.png",
-    link: "about:blank",
+    link: "http://anatali.duckdns.org:8060",
   },
   {
     title: "Password Generator",
@@ -43,7 +43,7 @@ export const projects = [
     title: "Chess Clock",
     subtitle: "React",
     description:
-      "Este es un proyecto construido con React. Es un reloj de ajedrez que permite a los jugadores configurar el tiempo de juego y el tiempo de incremento.",
+      "Este es un proyecto construido con React. Es un reloj de ajedrez que permite a los jugadores configurar el tiempo de juego y el tiempo de incremento, este permite llevar el tiempo para jugar correctamente al ajedrez.",
     image: "/Chess Clock.png",
     link: "https://chess-clock-an.vercel.app/",
   },

@@ -3,6 +3,9 @@ import { CiMail } from "react-icons/ci";
 import { FiSmartphone } from "react-icons/fi";
 import { useForm, ValidationError } from "@formspree/react";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mldrblvg");
@@ -12,7 +15,12 @@ export default function Contact() {
     navi("/");
   }
   return (
-    <section id="contact" className="md:h-screen">
+    <section
+      id="contact"
+      className="md:h-screen"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap sm:h-screen">
         <div className="w-full sm:w-1/2 sm:mr-6 sm:h-4/6">
           <iframe

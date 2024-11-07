@@ -1,11 +1,14 @@
 import React from "react";
 import { projects } from "../projectsdata";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function Projects() {
   return (
     <section
       id="projects"
-      className="text-gray-400 bg-gray-900 body-font dark:bg-white dark:text-black"
+      className="text-gray-400 bg-gray-900 body-font dark:bg-white dark:text-black" data-aos="flip-right"
     >
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
@@ -16,7 +19,7 @@ export default function Projects() {
             Estos son algunos de los proyectos que he construido
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-1">
           {projects.map((project) => (
             <a
               href={project.link}

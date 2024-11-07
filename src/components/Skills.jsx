@@ -1,10 +1,13 @@
 import React from "react";
 import { skills } from "../projectsdata";
 import { CheckBadgeIcon } from "@heroicons/react/16/solid";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" data-aos="zoom-in">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4 dark:text-black">

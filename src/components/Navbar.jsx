@@ -1,6 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { TbCircleLetterNFilled } from "react-icons/tb";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Navbar() {
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer"
         >
-          <TbCircleLetterNFilled className="w-10 h-10 text-blue-700 light:text-white dark:text-black" />
+          <TbCircleLetterNFilled className="w-10 h-10 text-slate-600 light:text-white dark:text-black" />
         </Link>
         <button
           data-collapse-toggle="navbar-default"
@@ -87,14 +88,12 @@ export default function Navbar() {
                 Contacto
               </Link>
             </li>
-            <li>
-              <button
-                onClick={toggleTheme}
-                className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"
-              >
-                {theme === "dark" ? "Modo Claro" : "Modo Oscuro"}
-              </button>
-            </li>
+            <button
+              onClick={toggleTheme}
+              className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"
+            >
+              {theme === "dark" ? <FaSun /> : <FaMoon />}{" "}
+            </button>
           </ul>
         </div>
       </div>

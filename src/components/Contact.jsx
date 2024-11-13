@@ -44,9 +44,6 @@ export default function Contact() {
           <h2 className="text-white sm:text-4xl text-3xl mb-3 font-medium title-font dark:text-black">
             ¡Contrátame!
           </h2>
-          <h4 className="mb-3 flex flex-row">
-            <CiMail size={25} className="mr-1" /> agustinnatali7@gmail.com
-          </h4>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
               Nombre

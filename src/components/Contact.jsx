@@ -45,9 +45,6 @@ export default function Contact() {
             ¡Contrátame!
           </h2>
           <h4 className="mb-3 flex flex-row">
-            <FiSmartphone size={25} className="mr-1" /> 3364359560
-          </h4>
-          <h4 className="mb-3 flex flex-row">
             <CiMail size={25} className="mr-1" /> agustinnatali7@gmail.com
           </h4>
           <div className="relative mb-4">

@@ -25,11 +25,11 @@ export const projects = [
   },
   {
     title: "Landing Medicina",
-    subtitle: "Javascript,Html,Css",
+    subtitle: "React,TypeScript",
     description:
-      "Esta landing page fue construida con HTML, CSS y JavaScript. Es una página web que muestra información sobre por ejemplo una obra social prepaga de medicina. En este caso, solamente es un ejemplo",
+      "Esta landing fue construida con React. Es una página web que muestra información sobre por ejemplo una obra social prepaga de medicina. En este caso, solamente es un ejemplo",
     image: "/Landing Medicina.png",
-    link: "http://anatali.duckdns.org:8060",
+    link: "https://landing-medicine-20.vercel.app/",
   },
   {
     title: "Password Generator",

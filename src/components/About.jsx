@@ -12,15 +12,16 @@ export default function About() {
             className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white dark:text-black"
             data-aos="fade-left"
           >
-            Hola, soy Agustin
+            Hola, soy Agustin Natali
             <br className="" />
-            Soy desarrollador
+            Soy desarrollador de aplicaciones
           </h1>
           <p className="mb-8 leading-relaxed text-xl" data-aos="fade-left">
-            Me encuentro estudiando y aprendiendo nuevas habilidades en este
-            mundo de la programación
-            <br className="" /> con muchas ganas de seguir profundizando en este
-            área.
+            Actualmente me encuentro estudiando y desarrollando nuevas
+            habilidades en el ámbito del
+            <br className="" /> desarrollo de software, con una gran motivación
+            por seguir aprendiendo y profundizando <br className="" /> mis
+            conocimientos en esta área.
           </p>
           <div className="flex justify-center">
             <a

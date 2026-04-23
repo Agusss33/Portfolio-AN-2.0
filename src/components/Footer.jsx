@@ -6,14 +6,14 @@ export default function Footer() {
     <footer className="text-gray-400 bg-gray-900 body-font dark:text-black dark:bg-white">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">
-          © 2024 Portfolio —
+          © {new Date().getFullYear()}
           <a
             href="https://www.linkedin.com/in/agustin-natali-b84091226/"
             className="text-gray-500 ml-1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @Agustin Natali
+            Agustin Natali
           </a>
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">

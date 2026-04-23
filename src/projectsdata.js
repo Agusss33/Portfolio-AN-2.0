@@ -51,21 +51,13 @@ export const projects = [
 
 export const skills = [
   {
-    skill: "JavaScript",
-    image: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    skill: "Python",
+    image: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
   },
   {
     skill: "React",
     image:
       "https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000",
-  },
-  {
-    skill: "HTML",
-    image: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
-  },
-  {
-    skill: "CSS",
-    image: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
   },
   {
     skill: "NodeJS",

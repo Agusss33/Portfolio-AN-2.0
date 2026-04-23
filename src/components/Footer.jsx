@@ -8,7 +8,6 @@ export default function Footer() {
         <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">
           © {new Date().getFullYear()}
           <a
-            href="https://www.linkedin.com/in/agustin-natali-b84091226/"
             className="text-gray-500 ml-1"
             target="_blank"
             rel="noopener noreferrer"
